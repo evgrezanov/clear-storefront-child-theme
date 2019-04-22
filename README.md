@@ -1,0 +1,1 @@
+# clear-storefront-child-theme
