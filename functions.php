@@ -22,5 +22,16 @@ function sf_child_theme_dequeue_style() {
 /**
  * Note: DO NOT! alter or remove the code above this text and only add your custom PHP functions below this text.
  */
-
-
+ /**
+ 	 * Display the theme credit
+ 	 *
+ 	 * @since  1.0.0
+ 	 * @return void
+ 	 */
+ 	function storefront_credit() {
+ 		?>
+ 		<div class="site-info">
+ 			<?php echo esc_html( apply_filters( 'storefront_copyright_text', $content = '&copy; ' . get_bloginfo( 'name' ) . ' ' . date( 'Y' ) ) ); ?>
+ 		</div><!-- .site-info -->
+ 		<?php
+ 	}
